@@ -1,0 +1,161 @@
+.container {
+  width: 996px;
+  margin: 0px auto;
+  font-family: "Inter";
+}
+
+.header {
+  overflow: hidden;
+  clear: both;
+  margin-top: 0 auto;
+  padding: 10px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.logo {
+  padding-top: 10px;
+  margin-left: 35px;
+  width: 10%;
+}
+
+.write,
+.answer {
+  padding: 5px;
+
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+.write {
+  float: left;
+  width: 70%;
+
+  .text-area {
+    height: 350px;
+    border: none;
+    color: #0a3871;
+    margin-top: 30px;
+    padding: 2px;
+    width: 99%;
+    font-size: 3em;
+  }
+  ::placeholder {
+    color: #0a3871;
+  }
+  .text-area:focus {
+    outline: none;
+  }
+}
+.answer {
+  float: right;
+  width: 25%;
+}
+.msg {
+  height: 436px;
+  background: white;
+  background-image: url("img/Muñeco.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  color: #0a3871;
+  margin-top: 30px;
+  padding: 2px;
+  width: 99%;
+  font-size: 1.1em;
+  font-family: "Press Start 2P";
+}
+.msg:focus {
+  outline: none;
+}
+
+.botones {
+  display: flex;
+  margin-top: 18px;
+}
+
+.btnEnc {
+  background-color: #0a3871;
+  border: 1px solid #0a3871;
+  border-radius: 24px;
+  color: white;
+  cursor: pointer;
+  height: 67px;
+  width: 50%;
+  font-size: 25px;
+}
+.btnDes {
+  background: #d8dfe8;
+  border: 1px solid #0a3871;
+  border-radius: 24px;
+  color: #0a3871;
+  cursor: pointer;
+  height: 67px;
+  margin-left: 30px;
+  width: 50%;
+  font-size: 25px;
+}
+
+.btnCopy {
+  background: #d8dfe8;
+  border: 1px solid #0a3871;
+  border-radius: 24px;
+  color: #0a3871;
+  cursor: pointer;
+  height: 67px;
+  width: 100%;
+  font-size: 25px;
+}
+
+.informacion {
+  color: #495057;
+  font-size: 18px;
+}
+
+footer {
+  margin-top: 10px;
+  margin: 10px;
+  padding-top: 10px;
+  text-align: center;
+  clear: both;
+}
+
+/* para 980px o menos */
+@media screen and (max-width: 980px) {
+  .container {
+    width: 98%;
+    font-size: 1.1em;
+  }
+  .write {
+    width: 68%;
+  }
+}
+
+/* para 700px o menos */
+@media screen and (max-width: 700px) {
+  .answer,
+  .write {
+    float: none;
+    width: 96%;
+  }
+  .write {
+    font-size: 1.2em;
+  }
+  .answer {
+    margin-top: 5px;
+  }
+}
+
+/* para 480px o menos */
+@media screen and (max-width: 480px) {
+  .write {
+    font-size: 0.6em;
+  }
+  .informacion {
+    font-size: 14px;
+  }
+  .write {
+    width: 94%;
+  }
+}
